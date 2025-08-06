@@ -12,6 +12,7 @@ karena mampu mendaur ulang tampilan item yang tidak terlihat di layar (recycle v
 - Erikza Assyifia Ahmad
 - Jovita Acid Rahayu 
 
+## Penjelasan Alur Data
 
 ## Fitur Aplikasi
 - Menampilkan daftar 10 siswa.
