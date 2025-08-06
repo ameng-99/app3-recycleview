@@ -26,7 +26,8 @@ karena mampu mendaur ulang tampilan item yang tidak terlihat di layar (recycle v
 
 ## Fitur Aplikasi
 - Menampilkan daftar 10 siswa.
-  ![WhatsApp Image 2025-08-06 at 09 27 39_734b00e7](https://github.com/user-attachments/assets/8bcfb8eb-8fa7-404f-b83f-20c503b0c63c)
+<img src="https://github.com/user-attachments/assets/8bcfb8eb-8fa7-404f-b83f-20c503b0c63c" width="300"/>
+
 Fungsi kode tersebut adalah untuk menampilkan daftar siswa secara vertikal menggunakan RecyclerView, di mana setiap item berisi nama, NIS, dan kelas siswa yang datanya dihubungkan melalui StudentAdapter.
 
 - Setiap item memiliki tombol Edit dan Hapus (bisa mengubah data siswa dan bisa menghapus).
