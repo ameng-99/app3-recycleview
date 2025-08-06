@@ -2,15 +2,17 @@
 Project ini dibuat untuk menampilkan daftar siswa menggunakan komponen RecyclerView di Android Studio. 
 Aplikasi ini merupakan tugas praktikum yang bertujuan untuk memahami cara kerja RecyclerView, adapter, dan model data.
 
+## 👥 Tim
+- Amelia Nur Auni 
+- Erikza Assyifia Ahmad
+- Jovita Acid Rahayu
+
+
 ## Penjelasan RecyclerView
 RecyclerView adalah komponen yang disediakan oleh Android untuk menampilkan data dalam bentuk daftar (list) atau grid secara efisien. 
 Dibandingkan dengan ListView, RecyclerView lebih fleksibel dan memiliki performa yang lebih baik, 
 karena mampu mendaur ulang tampilan item yang tidak terlihat di layar (recycle view), sehingga menghemat penggunaan memori.
 
-## 👥 Tim
-- Amelia Nur Auni 
-- Erikza Assyifia Ahmad
-- Jovita Acid Rahayu 
 
 ## Penjelasan Alur Data 
 1. Student.kt (Model)
@@ -61,4 +63,24 @@ karena mampu mendaur ulang tampilan item yang tidak terlihat di layar (recycle v
 
 
 - Menambahkan gambar, NIS, dan kelas setiap siswa.
+Pada bagian ini, saat sebelum dibuat CRUD, sistem otomatis di adakan opsi NIS, Kelas yang nantinya pengguna tinggal mengisinya saja. Bagian gambar, gambar di setting otomatis dengan gambar yang sudah di sesuaikan, atau jika ingin diganti gambar lain, maka harus di ganti langsung di dalam res>drawable.
 
+- Menambahkan data siswa
+<img width="1005" height="264" alt="Screenshot 2025-08-06 185137" src="https://github.com/user-attachments/assets/1f376eaa-0401-4f59-b44b-b77985985408" />
+
+
+- Penjelasan:
+1. val btnTambah: Button = findViewById(R.id.btnTambah)
+Ini mengambil tombol "Tambah" dari layout XML (yang ID-nya btnTambah). Disimpan ke variabel btnTambah.
+2. btnTambah.setOnClickListener { ... }
+Ini membuat tombol bisa diklik. Saat diklik, akan menjalankan kode di dalam { ... }.
+3. Intent(this, AddEditActivity::class.java)
+Ini bikin Intent, yaitu "surat jalan" untuk pindah dari MainActivity ke AddEditActivity. Tujuannya untuk buka halaman tambah data siswa.
+4. startActivityForResult(intent, REQUEST_ADD)
+Fungsi ini memulai aktivitas baru (AddEditActivity) dan menunggu hasil baliknya. REQUEST_ADD itu semacam kode/nama untuk menandai bahwa kamu sedang menambahkan data baru. Setelah halaman tambah ditutup, hasilnya akan dikembalikan ke MainActivity (biasanya data siswa baru yg ditambah).
+
+- Hasil:
+<img src="https://github.com/user-attachments/assets/046d02e8-5b79-4708-9410-f6324e2cdefb" width="300"/>
+
+## Kesimpulan
+Melalui projek ini, kami mendapatkan tambahan ilmu bagaimana cara  untuk mengimplementasikan RecyclerView dalam menampilkan data siswa secara dinamis, serta mempelajari alur pengolahan data menggunakan adapter, intent antar activity, dan interaksi pengguna seperti tambah, edit, hapus, dan melihat detail data. Proyek ini dapat menambah wawasan pemahaman kami dalam membangun aplikasi Android, yang di buat di Android Studio.
