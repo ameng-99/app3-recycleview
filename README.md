@@ -12,7 +12,17 @@ karena mampu mendaur ulang tampilan item yang tidak terlihat di layar (recycle v
 - Erikza Assyifia Ahmad
 - Jovita Acid Rahayu 
 
-## Penjelasan Alur Data
+## Penjelasan Alur Data 
+1. Student.kt (Model)
+- Kelas data (data class) yang menyimpan properti siswa seperti nama, nis, kelas, dan foto. Digunakan untuk merepresentasikan satu objek data siswa.
+2. StudentAdapter.kt (Adapter)
+- Berfungsi untuk menghubungkan data siswa ke tampilan list di RecyclerView (mengatur tampilan dan klik pada setiap item siswa).
+3. item_student.xml (Layout Item)
+- Layout XML untuk satu item siswa di dalam RecyclerView. Isinya berupa gambar siswa, nama, NIS, dan Kelas.
+4. MainActivity.kt
+- Menampilkan data list siswa dalam RecyclerView. Di bagian sini data siswa dikirim ke adapter, recyclerView dikonfigurasi, handle klik item untuk berpindah ke detail.
+5. DetailActivity.kt
+- Menampilkan detail lengkap dari siswa yang dipilih (menerima data siswa melalui Intent dari MainActivity).
 
 ## Fitur Aplikasi
 - Menampilkan daftar 10 siswa.
