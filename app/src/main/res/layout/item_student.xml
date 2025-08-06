@@ -8,12 +8,13 @@
     card_view:cardElevation="4dp">
 
     <LinearLayout
-        android:padding="12dp"
         android:orientation="horizontal"
         android:gravity="center_vertical"
+        android:padding="12dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <!-- Foto -->
         <ImageView
             android:layout_width="48dp"
             android:layout_height="48dp"
@@ -21,12 +22,14 @@
             android:contentDescription="Icon Siswa"
             android:layout_marginEnd="12dp" />
 
+        <!-- Info + tombol -->
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content">
 
+            <!-- Nama -->
             <TextView
                 android:id="@+id/tvNama"
                 android:text="Nama Siswa"
@@ -36,6 +39,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
+            <!-- NIS -->
             <TextView
                 android:id="@+id/tvNis"
                 android:text="NIS"
@@ -44,6 +48,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
+            <!-- Kelas -->
             <TextView
                 android:id="@+id/tvKelas"
                 android:text="Kelas"
@@ -51,6 +56,27 @@
                 android:textColor="#777777"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
+
+            <!-- Tombol Edit & Hapus -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <Button
+                    android:id="@+id/btnEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit" />
+
+                <Button
+                    android:id="@+id/btnHapus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hapus"
+                    android:layout_marginStart="12dp" />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>
